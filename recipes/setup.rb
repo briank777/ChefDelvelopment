@@ -16,7 +16,7 @@ package 'git' do
 end
 
 
-
+#new comment
 service 'ntpd'  do
 	action  [ :enable, :start ]
 end
