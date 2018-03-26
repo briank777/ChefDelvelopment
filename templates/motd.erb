@@ -1,8 +1,9 @@
-This server is the property of Linux Academy Chef
-	HOSTNAME: <%= node['hostname'] %>
-	IPADDRESS: <%= node['ipaddress'] %>
-	CPU: <%= node['cpu']['0']['mhz'] %>
-	MEMORY <%= node ['memory']['total'] %>
+This server is the property of LinuxAcademy
 
+HOSTNAME: <%= node['hostname'] %>
+IPADDRESS: <%= node['ipaddress'] %>
+MEMORY: <%= node['memory']['total'] %>
+CPU: <%= node['cpu']['0']['mhz'] %>
 
-	
+NAME: <%= @name %>
+
