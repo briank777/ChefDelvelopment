@@ -23,20 +23,10 @@ end
 
 
 
-file '/etc/motd' do
+template '/etc/motd' do
+	source 'motd.erb'
 	action :create
-	content "This server is the property of LinuxAcademy
-        HOSTNAME: #{node['hostname']}
-	IPADDRESS:#{node['ipaddress']} 
-	CPU: #{node['cpu']['0']['mhz']}
-	MEMORY: #{node['memory']['total']}
-
-
-"
-	owner  'root'
-	group 'root'	
 end
-
 
 
 
